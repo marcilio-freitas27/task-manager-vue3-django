@@ -1,0 +1,89 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+venv.bak/
+env.bak/
+
+# Environment files (allow example/sample files)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+# If you don't want to track migrations, uncomment the next line
+# */migrations/*.py
+# */migrations/*.pyc
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Test / coverage
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# JetBrains caches
+.idea/
+*.iws
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package managers / lockfiles (optional: keep if you want to track them)
+# Pipenv/Poetry lockfiles are often tracked for reproducible installs.
+# Uncomment to ignore them:
+# Pipfile.lock
+# poetry.lock
+
+# Misc
+*.pem
+*.key
+*.log
+*.tmp
+.cache/
+node_modules/
+
+# Python tooling
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Docker local override
+docker-compose.override.yml
