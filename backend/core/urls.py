@@ -17,7 +17,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from rest_framework.routers import DefaultRouter
+from api.views import TaskViewSet
+
+api = DefaultRouter()
+api.register(r"tasks", TaskViewSet, basename="task")
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("api/", api.urls),  # Include API app URLs
 ]
